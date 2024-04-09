@@ -1,0 +1,22 @@
+
+# After Installing React Type Script
+
+# Remove unneccessary files
+
+1. reportWebVitals.ts
+2. setupTests.ts
+3. logo.svg
+4. App.test.tsx
+
+# Go to App.tsx
+
+1. remove logo
+2. remove everything inside app()
+
+# Go to Index.tsx
+
+1. remove web vitals
+
+# Go to app.css
+
+1. remove all css
