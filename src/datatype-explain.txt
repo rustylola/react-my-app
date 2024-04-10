@@ -1,0 +1,83 @@
+
+//  ## DataType
+// let name:string; // string,number,(any) is not recommended
+// let age:number | string;
+// let isStudent:boolean;
+// let hobbies:string[]; // array of string number[]
+// let role:[number,string]; // containg number , string // role = [5,'test'];
+
+// ## END DataType 
+
+// ## Two types of function
+
+// let printName:Function;
+// this will return anything
+// let printNames: (name:string) => void; // number,string,void
+// N: Initialize function return has or not
+// let printName:(name:string) => never;
+
+// Sample
+// function printName(name:string){
+//   console.log(name);
+
+// }
+
+// printName('John');
+// ## END Function
+
+// ## OBJECT
+// it is like declaring an object setup/parameters with key:datatype
+// type Person = {
+//   name: string;
+//   age?:number;
+// };
+
+// ## INTERFACE
+// interface Person {
+//   name: string;
+//   age?:number;
+// };
+
+// // extends properties
+// interface Guy extends Person{
+//   profession : string;
+// }
+// Same as javascript class
+
+
+// ## TYPE
+// type X = {
+//   a:number;
+//   b:string;
+// }
+// extends property from X
+// type Y = X & {
+//   c:number;
+//   d:string;
+// }
+// ex.
+// let y : Y = {
+//   a: 1,
+//   b: 'c',
+//   c: 1,
+//   d: "hehe",
+// }
+
+// extends type and interface
+// type X = Person & {
+//   a:number;
+//   b:string;
+// }
+
+// let person : Person = {
+//   name: "john",
+// }
+// console.log(person);
+
+// let lotsOfPerson: Person[];
+
+// let person:Object;
+// ## END Object
+
+// Recommend initializing DataType unknown instead of (any)
+// let personName:unknown;

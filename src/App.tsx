@@ -1,36 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
+import InputField from './components/InputField';
 
-let name:string;
-let age:number | string;
-let isStudent:boolean;
-let hobbies:string[]; // array of string number[]
-let role:[number,string]; // containg number , string // role = [5,'test'];
 
-function printName(name:string){
-  console.log(name);
+// F.C is Functional Component
+// Type React. to view all types of it
+const App:React.FC = () => {
 
-}
-
-printName('John');
-
-// type Person = {
-//   name: string;
-//   age?:number;
-// };
-
-// let person : Person = {
-//   name: "john",
-// }
-
-// let lotsOfPerson: Person[];
-
-// let person:Object;
-
-function App() {
+  const [todo,setTodo] = useState<string>("");
+  
   return (
     <div className="App">
-      Hello World!
+      <span className="heading">TaskTify</span>
+      <InputField todo={todo} setTodo={setTodo}/>
     </div>
   );
 }
